@@ -1,0 +1,60 @@
+// Color system
+//
+// stylelint-disable
+$white:    #fefefe !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #F5F5F5 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #D6D6D6 !default;
+$gray-500: #adb5bd !default;
+$gray-600: #848383 !default;
+$gray-700: #707070 !default;
+$gray-800: #414141 !default;
+$gray-900: #212529 !default;
+$black:    #141414 !default;
+//
+//header defult color
+$ap-gray: #606060 !default;
+$ap-red: #AC4646 !default;
+$ap-green: #73AF55 !default;
+//header hover color
+$ap-pink-200: #F4E2E3 !default;
+$ap-pink-600: #FBAFB8 !default;
+$ap-orange-200: #FAC6A4 !default;
+$ap-orange-600: #EC965E !default;
+$ap-brown-100: #E8E5E2 !default;
+$ap-brown-200: #EBD1B5 !default;
+$ap-brown-600: #886b4c !default;
+$ap-purple-200: #e7c8de !default;
+$ap-purple-600: #DBA7CC !default;
+$ap-yellow-200: #FFF291 !default;
+$ap-yellow-600: #fee100 !default;
+
+//color
+.white {color:$white !important;} 
+.gray-100 {color:$gray-100;} 
+.gray-200 {color:$gray-200;}
+.gray-300 {color:$gray-300;}
+.gray-400 {color:$gray-400;}
+.gray-500 {color:$gray-500;}
+.gray-600 {color:$gray-600;}
+.gray-700 {color:$gray-700;}
+.gray-800 {color:$gray-800;}
+.gray-900 {color:$gray-900;}
+.black  {color:$black;}
+.ap-gray  {color:$ap-gray;}
+.ap-red{color: $ap-red;}
+.ap-green{color: $ap-green;}
+.ap-pink-200  {color:$ap-pink-200;}
+.ap-pink-600  {color:$ap-pink-600;}
+.ap-orange-200  {color:$ap-orange-200;}
+.ap-orange-600  {color:$ap-orange-600;&:hover{color: $ap-orange-600;}}
+.ap-brown-100  {color:$ap-brown-100;}
+.ap-brown-200  {color:$ap-brown-200;}
+.ap-brown-600  {color:$ap-brown-600;}
+.ap-purple-200  {color:$ap-purple-200;}
+.ap-purple-600  {color:$ap-purple-600;}
+.ap-yellow-200  {color:$ap-yellow-200;}
+.ap-yellow-600  {color:$ap-yellow-600;}
+
+.ap-brown-100-bg {background-color: $ap-brown-100;}
