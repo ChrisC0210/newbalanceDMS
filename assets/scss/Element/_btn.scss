@@ -1,0 +1,11 @@
+.btn-nb-primary{
+  background-color: $nb-red;
+  //border-color: $nb-red;
+  color: $white;
+  &:hover{
+    background-color: $nb-red-600;
+  }
+  &::active{
+    background-color: $nb-red-600;
+  }
+}

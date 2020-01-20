@@ -1,0 +1,15 @@
+.footer-box{
+  height: 70px;
+  //background-color: $gray-400;
+  margin: 0 auto;
+  position: relative;
+  p{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-size: 16px;
+    width: 100%;
+  }
+}

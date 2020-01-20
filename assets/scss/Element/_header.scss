@@ -1,0 +1,50 @@
+// Navigation Variables
+$content-width: 1080px;
+$breakpoint: 799px;
+$nav-height: 70px;
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+//dropdown-submenu
+
+
+.nb-logo{
+  width: 200px;
+}
+.header-all{
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  nav{
+    background-color: $white;
+  }
+}
+.right-menu{
+  list-style: none;
+  padding-left: 300px;
+  position: absolute;
+  right: 0;
+  @media screen and (max-width: $breakpoint) {
+    position: relative;
+    padding-left: 0px;
+  }
+  a{
+    text-decoration: none;
+  }
+}

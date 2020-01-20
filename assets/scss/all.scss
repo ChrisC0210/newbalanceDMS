@@ -1,11 +1,16 @@
 //boostrap
 @import "../scss/plugin/boostrap";
 //NB Style
-@import "../scss/nbStyle/nbFonts";
 @import "../scss/nbStyle/nbColor";
+@import "../scss/nbStyle/nbFonts";
+@import "../scss/Element/btn";
 //plugin
 //@import "./plugin/pureCookie";
-@import "../scss/plugin/jquerySteps.scss";
+//Element
+@import "../scss/Element/header";
+@import "../scss/Element/login";
+@import "../scss/Element/carousel";
+@import "../scss/Element/footer";
 //@import "../scss/plugin/slick";
 // @import "../scss/Element/header";
 // @import "../scss/Element/searchBar";

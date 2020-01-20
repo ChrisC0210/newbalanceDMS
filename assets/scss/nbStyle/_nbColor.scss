@@ -14,9 +14,8 @@ $gray-900: #212529 !default;
 $black:    #141414 !default;
 //
 //header defult color
-$ap-gray: #606060 !default;
-$ap-red: #AC4646 !default;
-$ap-green: #73AF55 !default;
+$nb-red: #e21836 !default;
+$nb-red-600: #D1102D !default;
 //header hover color
 $ap-pink-200: #F4E2E3 !default;
 $ap-pink-600: #FBAFB8 !default;
@@ -42,9 +41,8 @@ $ap-yellow-600: #fee100 !default;
 .gray-800 {color:$gray-800;}
 .gray-900 {color:$gray-900;}
 .black  {color:$black;}
-.ap-gray  {color:$ap-gray;}
-.ap-red{color: $ap-red;}
-.ap-green{color: $ap-green;}
+.nb-red{color: $nb-red;}
+.nb-red-600{color: $nb-red-600;}
 .ap-pink-200  {color:$ap-pink-200;}
 .ap-pink-600  {color:$ap-pink-600;}
 .ap-orange-200  {color:$ap-orange-200;}
