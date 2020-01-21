@@ -8528,7 +8528,7 @@ ul {
 }
 
 .ace-responsive-menu li a {
-  color: #fff;
+  color: #000;
 }
 
 .ace-responsive-menu > li > a {
@@ -8559,8 +8559,7 @@ ul {
 }
 
 .ace-responsive-menu li.menu-active > a {
-  background: #818181;
-  color: #fff;
+  color: #e21836;
 }
 
 .ace-responsive-menu li .menu-active {
@@ -8596,7 +8595,7 @@ ul {
 }
 
 .ace-responsive-menu li ul.sub-menu {
-  background: #bbbbbb;
+  background: #fefefe;
 }
 
 .ace-responsive-menu li ul.sub-menu > li {
@@ -8656,7 +8655,7 @@ ul {
 
 .menu-toggle h3 {
   float: left;
-  color: #FFF;
+  color: #000;
   padding: 0px 10px;
   font-weight: 600;
   font-size: 16px;
@@ -8666,7 +8665,7 @@ ul {
   display: block !important;
   width: 18px;
   height: 2px;
-  background-color: #F5F5F5 !important;
+  background-color: black !important;
   border-radius: 1px;
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
@@ -8674,13 +8673,13 @@ ul {
 }
 
 .menu-toggle .icon-bar:hover {
-  background-color: #afafaf !important;
+  background-color: #e21836 !important;
 }
 
 .menu-toggle #menu-btn {
   float: right;
-  background: #c0c0c0;
-  border: 1px solid #c0c0c0;
+  background: #ffffff;
+  border: 1px solid #ffffff;
   padding: 8px;
   border-radius: 5px;
   cursor: pointer;
