@@ -22,6 +22,11 @@ $nav-height: 70px;
 .nb-logo{
   width: 200px;
 }
+.nb-logo-box{
+  position: absolute;
+  left: 16px;
+  top: 4px;
+}
 .header-all{
   position: fixed;
   top: 0;
@@ -38,10 +43,10 @@ $nav-height: 70px;
 .right-menu{
   list-style: none;
   padding-left: 300px;
-  position: absolute;
+  position: absolute !important;
   right: 0;
   @media screen and (max-width: $breakpoint) {
-    position: relative;
+    position: relative !important;
     padding-left: 0px;
   }
   a{
