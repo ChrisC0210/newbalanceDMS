@@ -12,42 +12,74 @@
 
 <body>
   <header class="header-all">
-    <nav class="container navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="/"><img class="nb-logo" src="./assets/nb-logo.svg" alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown-rcm" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">Retail Concept Manual</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown-rcm">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown-eshop" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">Eshop</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown-eshop">
-              <a class="dropdown-item" href="#">Basic</a>
-              <a class="dropdown-item" href="#">Fixture</a>
-              <a class="dropdown-item" href="#">Props</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-          <li class="right-menu my-2"><a href="./login.html">Log in</a></li>
-        </ul>
-      </div>
-    </nav>
+		<!-- Ace Responsive Menu -->
+		<nav class="nb-nav" style="z-index: 99999;">
+			<span class="nb-logo-box"><a class="navbar-brand" href="/"><img class="nb-logo" src="./assets/nb-logo.svg" alt="logo"></a></span>
+			<!-- Menu Toggle btn-->
+			<div class="menu-toggle">
+				<button type="button" id="menu-btn">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- Responsive Menu Structure-->
+      <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+			<ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+				<li>
+					<a href="/">
+						<span class="title">Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span class="title">Retail Concept Manual</span>
+					</a>
+					<!-- Level Two-->
+					<ul>
+						<li>
+							<a href="#">Metro</a>
+						</li>
+						<li>
+							<a href="#">Factory Outlet</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="" href="javascript:;">
+						<span class="title">Eshop</span>
+					</a>
+					<ul>
+						<li>
+							<a href="#">Basic
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">Fixture
+							</a>
+							<ul>
+								<li><a href="#">Metro </a></li>
+								<li><a href="#">Factory Outlet</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Props
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="last ">
+					<a href="./contact.html">
+						<span class="title">Contact Us</span>
+					</a>
+				</li>
+				<li class=" ">
+					<a class="right-menu" href="./login.html">
+						<span class="title">Log in</span></a>
+				</li>
+			</ul>
+		</div>
+    <!-- End of Responsive Menu -->
   </header>
   <main class="container login-all mb-4">
     <div class="pt-4">
@@ -100,7 +132,8 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="./dist/js/popper.min.js"></script>
   <script type="text/javascript" src="./dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="./dist/js/all.js"></script>
+	<script src="./dist/js/ace-responsive-menu-min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="./dist/js/header.js"></script>
 </body>
 
 </html>
