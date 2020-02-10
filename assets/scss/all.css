@@ -9317,6 +9317,19 @@ ul[data-menu-style="vertical"] li a:hover {
   background-color: #D1102D;
 }
 
+.btn-nb-gray-500 {
+  background-color: #adb5bd;
+  color: #fefefe;
+}
+
+.btn-nb-gray-500:hover {
+  background-color: #848383;
+}
+
+.btn-nb-gray-500::active {
+  background-color: #848383;
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -9435,5 +9448,31 @@ ul[data-menu-style="vertical"] li a:hover {
   margin: 0 auto;
   font-size: 16px;
   width: 100%;
+}
+
+.btn-nb-primary {
+  background-color: #e21836;
+  color: #fefefe;
+}
+
+.btn-nb-primary:hover {
+  background-color: #D1102D;
+}
+
+.btn-nb-primary::active {
+  background-color: #D1102D;
+}
+
+.btn-nb-gray-500 {
+  background-color: #adb5bd;
+  color: #fefefe;
+}
+
+.btn-nb-gray-500:hover {
+  background-color: #848383;
+}
+
+.btn-nb-gray-500::active {
+  background-color: #848383;
 }
 /*# sourceMappingURL=all.css.map */

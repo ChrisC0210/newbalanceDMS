@@ -9,3 +9,14 @@
     background-color: $nb-red-600;
   }
 }
+.btn-nb-gray-500{
+  background-color: $gray-500;
+  //border-color: gray-500;
+  color: $white;
+  &:hover{
+    background-color: $gray-600;
+  }
+  &::active{
+    background-color: $gray-600;
+  }
+}
