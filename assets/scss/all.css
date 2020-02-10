@@ -8595,7 +8595,7 @@ ul {
 }
 
 .ace-responsive-menu li ul.sub-menu {
-  background: #fefefe;
+  background: #f3f3f3;
 }
 
 .ace-responsive-menu li ul.sub-menu > li {
@@ -8827,7 +8827,7 @@ ul[data-menu-style="vertical"] li a:hover {
     float: none;
   }
   .ace-responsive-menu li a:hover {
-    background: #818181 !important;
+    background: #dfdfdf !important;
   }
   .ace-responsive-menu > li:first-child {
     border-top: 0.25px solid #FD5025;
