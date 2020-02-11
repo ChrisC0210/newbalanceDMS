@@ -1,3 +1,17 @@
+//200211 chris
+//add nb font 
+@font-face {
+  font-family: Gotham, sans-serif;
+  //src: url("path/GraublauWeb.otf") format("opentype");
+  src: url("/assets/fonts/Gotham-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  //src: url("path/GraublauWebBold.otf") format("opentype");
+  src: url("/assets/fonts/Gotham-Book.otf") format("opentype");
+}
+//
 //text
 .text-bold{
   font-weight: 500 !important;
@@ -283,6 +297,107 @@ $leading: 21px 27px 30px 36px 48px 60px 84px;
 .text-y-7-4-7{
   font-family: 'Yeseva One', cursive;
   font-weight: 400;
+  @include font(7);
+  @include leading(7);
+}
+//Gotham
+//blood
+.text-g-1-b-1{
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  @include font(1);
+  @include leading(1);
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+  }
+}
+.text-g-2-b-2{
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  @include font(2);
+  @include leading(2);
+}
+.text-g-3-b-3{
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  @include font(3);
+  @include leading(3);
+}
+.text-g-4-b-4{
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  @include font(4);
+  @include leading(4);
+  @media screen and (max-width: 500px) {
+    @include font(2);
+    @include leading(2);
+  }
+}
+.text-g-5-b-5{
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  @include font(5);
+  @include leading(5);
+}
+.text-g-6-b-6{
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  @include font(6);
+  @include leading(6);
+}
+.text-g-7-b-7{
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  @include font(7);
+  @include leading(7);
+}
+//font-weight: lighter;
+.text-g-1-l-1{
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  @include font(1);
+  @include leading(1);
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+  }
+}
+.text-g-2-l-2{
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  @include font(2);
+  @include leading(2);
+}
+.text-g-3-l-3{
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  @include font(3);
+  @include leading(3);
+}
+.text-g-4-l-4{
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  @include font(4);
+  @include leading(4);
+  @media screen and (max-width: 500px) {
+    @include font(2);
+    @include leading(2);
+  }
+}
+.text-g-5-l-5{
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  @include font(5);
+  @include leading(5);
+}
+.text-g-6-l-6{
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  @include font(6);
+  @include leading(6);
+}
+.text-g-7-l-7{
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
   @include font(7);
   @include leading(7);
 }

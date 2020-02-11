@@ -8506,7 +8506,6 @@ ul {
   background: #fefefe;
   float: left;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
   /* border-bottom: 3px solid #FD5025; */
   padding-left: 220px;
 }
@@ -8988,6 +8987,17 @@ ul[data-menu-style="vertical"] li a:hover {
   background-color: #E8E5E2;
 }
 
+@font-face {
+  font-family: Gotham, sans-serif;
+  src: url("/assets/fonts/Gotham-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  src: url("/assets/fonts/Gotham-Book.otf") format("opentype");
+}
+
 .text-bold {
   font-weight: 500 !important;
 }
@@ -9304,6 +9314,130 @@ ul[data-menu-style="vertical"] li a:hover {
   line-height: 84px;
 }
 
+.text-g-1-b-1 {
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+@media screen and (max-width: 500px) {
+  .text-g-1-b-1 {
+    font-size: 16px;
+  }
+}
+
+.text-g-2-b-2 {
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.text-g-3-b-3 {
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.text-g-4-b-4 {
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@media screen and (max-width: 500px) {
+  .text-g-4-b-4 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.text-g-5-b-5 {
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.text-g-6-b-6 {
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.text-g-7-b-7 {
+  font-family: Gotham, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 84px;
+}
+
+.text-g-1-l-1 {
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+@media screen and (max-width: 500px) {
+  .text-g-1-l-1 {
+    font-size: 16px;
+  }
+}
+
+.text-g-2-l-2 {
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.text-g-3-l-3 {
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.text-g-4-l-4 {
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@media screen and (max-width: 500px) {
+  .text-g-4-l-4 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.text-g-5-l-5 {
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.text-g-6-l-6 {
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.text-g-7-l-7 {
+  font-family: Gotham, sans-serif;
+  font-weight: lighter;
+  font-size: 48px;
+  line-height: 84px;
+}
+
 .btn-nb-primary {
   background-color: #e21836;
   color: #fefefe;
@@ -9448,6 +9582,12 @@ ul[data-menu-style="vertical"] li a:hover {
   margin: 0 auto;
   font-size: 16px;
   width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .footer-box p {
+    font-size: 10px;
+  }
 }
 
 .btn-nb-primary {

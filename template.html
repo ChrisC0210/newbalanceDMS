@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="header-all">
+  <header class="header-all text-g-1-l-1">
     <!-- Ace Responsive Menu -->
     <nav class="nb-nav" style="z-index: 99999;">
       <span class="nb-logo-box"><a class="navbar-brand" href="/"><img class="nb-logo" src="./assets/nb-logo.svg"
@@ -100,14 +100,14 @@
   </header>
   <main class="container" style="margin-top: 80px">
     <!-- delete start -->
-    <h4 class="nb-red">(1)</h4>
-    <h4 class="nb-red">PHP: showLinks.php</h4>
-    <h4 class="nb-red">USE: Important Links</h4>
+    <div class="alert alert-dark" role="alert">
+      (1)PHP: showLinks.php | USE: Important Links
+    </div>
     <!-- delete end -->
     <!-- section start -->
     <section>
-      <p class="text-center text-r-5-3-5">Important Links</p>
-      <div class="text-r-1-3-1">
+      <p class="text-center text-g-5-b-5 gray-800">Important Links</p>
+      <div class="text-g-1-l-1">
         <table class="table">
           <thead>
             <tr>
@@ -138,14 +138,14 @@
     </section>
     <!-- section end -->
     <!-- delete start -->
-    <h4 class="nb-red">(2)</h4>
-    <h4 class="nb-red">PHP: myaccount.php</h4>
-    <h4 class="nb-red">USE: My Account</h4>
+    <div class="alert alert-dark" role="alert">
+      (2)PHP: myaccount.php | USE: My Account
+    </div>
     <!-- delete end -->
     <!-- section start -->
     <section>
-      <p class="text-center text-r-5-3-5">My Account</p>
-      <div class="text-r-1-3-1">
+      <p class="text-g-5-b-5 gray-800">My Account</p>
+      <div class="text-g-1-l-1">
         <ul class="nav nav-tabs" id="myAccount" role="tablist">
           <li class="nav-item">
             <a class="nav-link active nb-red" id="changePW-tab" data-toggle="tab" href="#changePW" role="tab"
@@ -158,82 +158,206 @@
         </ul>
         <div class="tab-content" id="myAccountContent">
           <div class="tab-pane fade show active" id="changePW" role="tabpanel" aria-labelledby="changePW-tab">
-            <form class="col-lg-4 col-sm-12" name="form1" action="act.php" method="post" enctype="multipart/form-data">
+            <form class="col-lg-6 col-sm-12" name="form1" action="act.php" method="post" enctype="multipart/form-data">
               <div class="row mt-4 mb-2">
-                <div class="col-6 text-r-1-4-1 mb-2">User Name:</div>
+                <div class="col-6 mb-2">User Name:</div>
                 <div class="col-6 col-lg-6 col-sm-6">administrator</div>
               </div>
               <div class="row">
-                <div class="col text-r-1-4-1 mb-2">Old Password:</div>
+                <div class="col mb-2">Old Password:</div>
                 <label for="old_password" class="sr-only">Old Password</label>
                 <input type="password" name="old_password" id="old_password"
                   class="col form-control form-control-sm mb-2 col-lg-6 col-sm-12 " placeholder=" " required="">
               </div>
               <div class="row">
-                <div class="col text-r-1-4-1 mb-2">New Password:</div>
+                <div class="col mb-2">New Password:</div>
                 <label for="new_password" class="sr-only">New Password</label>
                 <input type="password" name="new_password" id="new_password"
                   class="col form-control form-control-sm mb-2 col-lg-6 col-sm-12 ml-2" placeholder=" " required="">
               </div>
-              <button class="col-4 btn btn-md btn-nb-primary btn-block text-r-2-4-2" name="btn_submit"
+              <button class="col-4 btn btn-md btn-nb-primary btn-block text-g-2-l-2 mb-4" name="btn_submit"
                 value="Update">Update</button>
             </form>
           </div>
           <div class="tab-pane fade" id="updateShopInfo" role="tabpanel" aria-labelledby="updateShopInfo-tab">
-            <form class="col-lg-4 col-sm-12" name="form1" action="act.php" method="post" enctype="multipart/form-data">
+            <form class="col-lg-6 col-sm-12" name="form1" action="act.php" method="post" enctype="multipart/form-data">
               <div class="row mt-4 mb-2">
-                <div class="col-6 text-r-1-4-1 mb-2">User Name:</div>
+                <div class="col-6 mb-2">User Name:</div>
                 <div class="col-6 col-lg-6 col-sm-6">administrator</div>
               </div>
               <div class="row">
-                <div class="col text-r-1-4-1 mb-2">First Name:</div>
+                <div class="col mb-2">First Name:</div>
                 <label for="user_shopping_first_name" class="sr-only">First Name</label>
                 <input type="text" id="user_shopping_first_name" name="user_shopping_first_name"
                   class="col form-control form-control-sm mb-2 col-lg-6 col-sm-12 " placeholder=" " required="">
               </div>
               <div class="row">
-                <div class="col text-r-1-4-1 mb-2">Last Name:</div>
+                <div class="col mb-2">Last Name:</div>
                 <label for="user_shopping_last_name" class="sr-only">Last Name</label>
                 <input type="text" id="user_shopping_last_name" name="user_shopping_last_name"
                   class="col form-control form-control-sm mb-2 col-lg-6 col-sm-12 " placeholder=" " required="">
               </div>
               <div class="row">
-                <div class="col text-r-1-4-1 mb-2">Contact Number:</div>
+                <div class="col mb-2">Contact Number:</div>
                 <label for="user_shopping_contact_no" class="sr-only">Contact Number</label>
                 <input type="text" id="user_shopping_contact_no" name="user_shopping_contact_no"
                   class="col form-control form-control-sm mb-2 col-lg-6 col-sm-12 " placeholder=" " required="">
               </div>
               <div class="row">
-                <div class="col text-r-1-4-1 mb-2">Email:</div>
+                <div class="col mb-2">Email:</div>
                 <label for="user_shopping_email" class="sr-only">Email</label>
                 <input type="text" id="user_shopping_email" name="user_shopping_email"
                   class="col form-control form-control-sm mb-2 col-lg-6 col-sm-12 " placeholder=" " required="">
               </div>
               <div class="row">
-                <div class="col text-r-1-4-1 mb-2">Address:</div>
+                <div class="col mb-2">Address:</div>
                 <label for="user_shopping_address" class="sr-only">Address</label>
-                <textarea id="user_shopping_address" name="user_shopping_address" cols="50" rows="5"
-                  class="ml-2 mb-4"></textarea>
+                <textarea class="form-control text-g-1-l-1 mb-2" id="user_shopping_address" name="user_shopping_address"
+                  rows="6" placeholder="Text Your Address here ..."></textarea>
               </div>
               <div class="row">
-                <div class="col text-r-1-4-1 mb-2">Country:</div>
+                <div class="col mb-2">Country:</div>
                 <label for="user_shopping_country" class="sr-only">Country</label>
                 <select id="user_shopping_country" name="user_shopping_country" class="form-control ml-2 mb-4">
-                    <option selected>Choose country</option>
-                    <option value="NZL"> New Zealand  </option>
-                    <option value="AFG">Afghanistan</option>
-                  </select>
+                  <option selected>Choose country</option>
+                  <option value="NZL"> New Zealand </option>
+                  <option value="AFG">Afghanistan</option>
+                </select>
               </div>
-              <div class="d-flex justify-content-between ">
-                <button class="col-4 btn btn-md btn-nb-primary text-r-2-4-2" name="btn_submit"
+              <div class="d-flex justify-content-between mb-4">
+                <button class="col-4 btn btn-md btn-nb-primary text-g-2-l-2" name="btn_submit"
                   value="Update">Update</button>
-                <button class="col-4 btn btn-md btn-secondary text-r-2-4-2" type="button" name="btn_reset"
+                <button class="col-4 btn btn-md btn-secondary text-g-2-l-2" type="button" name="btn_reset"
                   value="Reset">Reset</button>
               </div>
             </form>
           </div>
         </div>
       </div>
+    </section>
+    <!-- section end -->
+    <!-- delete start -->
+    <div class="alert alert-dark" role="alert">
+      (3)PHP: system.php | USE: System Setting
+    </div>
+    <!-- delete end -->
+    <!-- section start -->
+    <section>
+      <p class="text-g-5-b-5 gray-800">System Setting</p>
+      <div class="accordion" id="systemSetting">
+        <!-- card start -->
+        <div class="card">
+          <div class="card-header" id="heading1">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#systemSetting1"
+                aria-expanded="true" aria-controls="systemSetting1">
+                Copy Files
+              </button>
+            </h2>
+          </div>
+          <div id="systemSetting1" class="collapse show" aria-labelledby="heading1" data-parent="#systemSetting">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="card">
+          <div class="card-header" id="heading2">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#systemSetting2"
+                aria-expanded="false" aria-controls="systemSetting2">
+                User Restriction
+              </button>
+            </h2>
+          </div>
+          <div id="systemSetting2" class="collapse" aria-labelledby="heading2" data-parent="#systemSetting">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <!-- card end -->
+        <!-- card start -->
+        <div class="card">
+          <div class="card-header" id="heading3">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#systemSetting3"
+                aria-expanded="false" aria-controls="systemSetting3">
+                Manage Users
+              </button>
+            </h2>
+          </div>
+          <div id="systemSetting3" class="collapse" aria-labelledby="heading3" data-parent="#systemSetting">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+      <!-- card start -->
+      <div class="card">
+        <div class="card-header" id="heading4">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#systemSetting4"
+              aria-expanded="false" aria-controls="systemSetting4">
+              Announcement
+            </button>
+          </h2>
+        </div>
+        <div id="systemSetting4" class="collapse" aria-labelledby="heading4" data-parent="#systemSetting">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+            you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- card end -->
+      <!-- card start -->
+      <div class="card">
+        <div class="card-header" id="heading5">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#systemSetting5"
+              aria-expanded="false" aria-controls="systemSetting5">
+              Important Links
+            </button>
+          </h2>
+        </div>
+        <div id="systemSetting5" class="collapse" aria-labelledby="heading5" data-parent="#systemSetting">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+            you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- card end -->
     </section>
     <!-- section end -->
   </main>
