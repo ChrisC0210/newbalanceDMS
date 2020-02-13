@@ -9453,6 +9453,21 @@ ul[data-menu-style="vertical"] li a:hover {
   border-radius: .1rem;
 }
 
+.page-link {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #e21836;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.page-link:hover {
+  color: #D1102D;
+}
+
 .btn-nb-primary {
   background-color: #e21836;
   color: #fefefe;

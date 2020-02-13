@@ -10,3 +10,16 @@
 .card {
   border-radius: .1rem;
 }
+.page-link {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: $nb-red;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  &:hover{
+    color: $nb-red-600;
+  }
+}
