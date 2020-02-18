@@ -1,5 +1,6 @@
 .btn-nb-primary{
   background-color: $nb-red;
+  border-radius: 2px;
   //border-color: $nb-red;
   color: $white;
   &:hover{
@@ -10,7 +11,10 @@
   }
 }
 .btn-nb-gray-500{
+  border-radius: 2px;
   background-color: $gray-500;
+  margin: 4px;
+  width: 200px;
   //border-color: gray-500;
   color: $white;
   &:hover{

@@ -56,3 +56,18 @@ $ap-yellow-600: #fee100 !default;
 .ap-yellow-600  {color:$ap-yellow-600;}
 
 .ap-brown-100-bg {background-color: $ap-brown-100;}
+
+//https://www.cssmatic.com/box-shadow
+.nb-box-shadow{
+box-shadow: 1px -4px 15px -2px rgba(112,112,112,0.42);
+-webkit-box-shadow: 1px -4px 15px -2px rgba(112,112,112,0.42);
+-moz-box-shadow: 1px -4px 15px -2px rgb(112, 112, 112);
+}
+.nb-box-shadow-hover{
+  border: 2px solid rgba(182, 182, 182, 0);
+  &:hover{
+    box-shadow: 1px -4px 15px -2px rgba(112,112,112,0.42);
+    -webkit-box-shadow: 1px -4px 15px -2px rgba(112,112,112,0.42);
+    -moz-box-shadow: 1px -4px 15px -2px rgba(112,112,112,0.42);
+  }
+  }

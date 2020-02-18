@@ -1,0 +1,23 @@
+$breakpoint: 799px;
+.nb-banner-img{
+  height: 300px;
+  margin: auto;
+  position: relative;
+  color: $white;
+  text-shadow: 0.1em 0.1em 0.24em #333;
+  img{
+    height: 280px;
+    object-fit: cover;
+    width: 100%;
+  }
+  position: relative;
+  p{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (max-width: $breakpoint) {
+    width: 100%;
+  }
+}

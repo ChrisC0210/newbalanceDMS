@@ -23,3 +23,32 @@
     color: $nb-red-600;
   }
 }
+.shop-card-box{
+  position: relative;
+  .card-img-top{
+    height: 200px;
+    object-fit: cover;
+  }
+  .card{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  a{
+    color: $gray-800;
+    &:hover{
+      text-decoration: none;
+      color: $black;
+      transition: 0.3s;
+    }
+  }
+  .img-box{
+    overflow: hidden;
+  }
+  img{
+    overflow: hidden;
+    &:hover{
+      transform: scale(1.5);
+      transition: 300ms;
+    }
+  }
+}
+//
