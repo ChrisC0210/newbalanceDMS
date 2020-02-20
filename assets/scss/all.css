@@ -9570,18 +9570,52 @@ ul[data-menu-style="vertical"] li a:hover {
 
 .btn-nb-gray-500 {
   border-radius: 2px;
-  background-color: #adb5bd;
+  background-color: #D6D6D6;
   margin: 4px;
   width: 200px;
   color: #fefefe;
 }
 
 .btn-nb-gray-500:hover {
-  background-color: #848383;
+  background-color: #adb5bd;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .btn-nb-gray-500::active {
+  background-color: #adb5bd;
+}
+
+.btn-nb-red {
+  color: #fefefe;
+  background-color: #e21836;
+  border-color: #e21836;
+}
+
+.btn-nb-secondary {
+  color: #fefefe;
+  background-color: #adb5bd;
+  border-color: #adb5bd;
+}
+
+.btn-nb-secondary:hover, .btn-nb-secondary:active {
   background-color: #848383;
+  border-color: #848383;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.btn-nb-info {
+  color: #fefefe;
+  background-color: #a58520;
+  border-color: #a58520;
+}
+
+.btn-nb-info:hover, .btn-nb-info:active {
+  background-color: #997a16;
+  border-color: #997a16;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .bd-placeholder-img {
@@ -9726,18 +9760,52 @@ ul[data-menu-style="vertical"] li a:hover {
 
 .btn-nb-gray-500 {
   border-radius: 2px;
-  background-color: #adb5bd;
+  background-color: #D6D6D6;
   margin: 4px;
   width: 200px;
   color: #fefefe;
 }
 
 .btn-nb-gray-500:hover {
-  background-color: #848383;
+  background-color: #adb5bd;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .btn-nb-gray-500::active {
+  background-color: #adb5bd;
+}
+
+.btn-nb-red {
+  color: #fefefe;
+  background-color: #e21836;
+  border-color: #e21836;
+}
+
+.btn-nb-secondary {
+  color: #fefefe;
+  background-color: #adb5bd;
+  border-color: #adb5bd;
+}
+
+.btn-nb-secondary:hover, .btn-nb-secondary:active {
   background-color: #848383;
+  border-color: #848383;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.btn-nb-info {
+  color: #fefefe;
+  background-color: #a58520;
+  border-color: #a58520;
+}
+
+.btn-nb-info:hover, .btn-nb-info:active {
+  background-color: #997a16;
+  border-color: #997a16;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .nb-breadcrumb {
