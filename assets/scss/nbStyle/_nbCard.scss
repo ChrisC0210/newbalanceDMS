@@ -52,3 +52,10 @@
   }
 }
 //
+.cart-name{
+  max-width: 120px;
+  max-height: 20px;
+  word-wrap:break-word;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}

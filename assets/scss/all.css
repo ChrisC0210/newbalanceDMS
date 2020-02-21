@@ -9524,6 +9524,14 @@ ul[data-menu-style="vertical"] li a:hover {
   transition: 300ms;
 }
 
+.cart-name {
+  max-width: 120px;
+  max-height: 20px;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .nb-banner-img {
   height: 300px;
   margin: auto;
@@ -9586,6 +9594,12 @@ ul[data-menu-style="vertical"] li a:hover {
   background-color: #adb5bd;
 }
 
+@media screen and (max-width: 500px) {
+  .btn-nb-gray-500 {
+    width: 100%;
+  }
+}
+
 .btn-nb-red {
   color: #fefefe;
   background-color: #e21836;
@@ -9612,6 +9626,20 @@ ul[data-menu-style="vertical"] li a:hover {
 }
 
 .btn-nb-info:hover, .btn-nb-info:active {
+  background-color: #997a16;
+  border-color: #997a16;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.btn-add-cart {
+  color: #fefefe;
+  background-color: #a58520;
+  border-color: #a58520;
+}
+
+.btn-add-cart:hover, .btn-add-cart:active {
+  color: #fefefe;
   background-color: #997a16;
   border-color: #997a16;
   -webkit-transition: 300ms;
@@ -9776,6 +9804,12 @@ ul[data-menu-style="vertical"] li a:hover {
   background-color: #adb5bd;
 }
 
+@media screen and (max-width: 500px) {
+  .btn-nb-gray-500 {
+    width: 100%;
+  }
+}
+
 .btn-nb-red {
   color: #fefefe;
   background-color: #e21836;
@@ -9802,6 +9836,20 @@ ul[data-menu-style="vertical"] li a:hover {
 }
 
 .btn-nb-info:hover, .btn-nb-info:active {
+  background-color: #997a16;
+  border-color: #997a16;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.btn-add-cart {
+  color: #fefefe;
+  background-color: #a58520;
+  border-color: #a58520;
+}
+
+.btn-add-cart:hover, .btn-add-cart:active {
+  color: #fefefe;
   background-color: #997a16;
   border-color: #997a16;
   -webkit-transition: 300ms;
