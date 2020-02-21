@@ -736,7 +736,38 @@
       </table>
     </div>
     <!-- list -->
-
+    <!-- test -->
+    <!-- product start -->
+    <!-- https://codepen.io/Dimasion/pen/oBoqBM -->
+    <!-- product end -->
+    <!-- select all test -->
+    <form id="form1" name="form1" method="get" action="">
+      <div class="form-group form-check">
+        <input name="CheckAll" type="checkbox" class="form-check-input" id="CheckAll">
+        <label class="form-check-label" for="checkAll">select all</label>
+      </div>
+      <div class="form-group form-check">
+        <input data-name="test1" data-price="799.09" value="Test 1" name="Checkbox"
+          type="checkbox" class="add-to-cart form-check-input">
+        <label class="form-check-label" for="checkAll">Test 1</label>
+        <a href="#" data-name="test1" data-price="0.5"
+        class="add-to-cart btn btn-nb-gray-500">Add to cart</a>
+      </div>
+      <div class="form-group form-check">
+        <input value="Test 2" name="Checkbox" type="checkbox"
+          class="add-to-cart form-check-input">
+        <label class="form-check-label" for="checkAll">Test 2</label>
+        <a href="#" data-name="test2" data-price="1.2"
+        class="add-to-cart btn btn-nb-gray-500">Add to cart</a>
+      </div>
+      <p>
+        <input class="btn btn-warning" type="button" value="確定" onclick="check(this.form)">
+        <!-- <a href="#" class="btn btn-warning" onclick="check(this.form)">Add to cart</a> -->
+        <!-- <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a> -->
+      </p>
+    </form>
+    <!-- select all test -->
+    <!-- test -->
   </main>
   <!--product Modal -->
   <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
