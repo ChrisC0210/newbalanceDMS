@@ -9,6 +9,9 @@
   &::active{
     background-color: $nb-red-600;
   }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 }
 .btn-nb-gray-500{
   border-radius: 2px;
@@ -23,6 +26,54 @@
   }
   &::active{
     background-color: $gray-500;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}
+.btn-nb-gold{
+  border-radius: 2px;
+  margin: 4px;
+  width: 200px;
+  //border-color: gray-500;
+  color: $white;
+  background-color: $nb-loyalty;
+  border-color: $nb-loyalty;
+  &:hover{
+    color: $white;
+    background-color: $nb-loyalty-600;
+    border-color: $nb-loyalty-600;
+    transition: 300ms;
+  }
+  &::active{
+    color: $white;
+    background-color: $nb-loyalty-600;
+    border-color: $nb-loyalty-600;
+    transition: 300ms;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}
+.btn-nb-red-cart{
+  border-radius: 2px;
+  margin: 4px;
+  width: 200px;
+  //border-color: gray-500;
+  color: $white;
+  background-color: $nb-red;
+  border-color: $nb-red;
+  &:hover{
+    color: $white;
+    background-color: $nb-red-600;
+    border-color: $nb-red-600;
+    transition: 300ms;
+  }
+  &::active{
+    color: $white;
+    background-color: $nb-red-600;
+    border-color: $nb-red-600;
+    transition: 300ms;
   }
   @media screen and (max-width: 500px) {
     width: 100%;

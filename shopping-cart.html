@@ -87,34 +87,34 @@
   </header>
   <main class="container login-all mb-4">
     <!-- add to cart -->
-    <div class="text-g-1-l-1" style="position: absolute; right: 0; margin-top: 20px;">
-      <a href="" data-target="#cart" class="mr-3">Cart (<span class="total-count"></span>)</a>
-      <a href="" class="clear-cart nb-red">Clear Cart</a>
+    <div class="d-flex justify-content-end mb-2" style="position: fixed; top:70px;right: 20px; z-index: 999999;">
+      <button type="button" class="btn btn-nb-info mr-2" data-toggle="modal" data-target="#cart">Cart (<span
+          class="total-count"></span>)</button><button class="clear-cart btn btn-nb-secondary">Clear Cart</button>
     </div>
     <!-- add to cart -->
     <nav aria-label="breadcrumb" class="pt-4">
       <ol class="breadcrumb nb-breadcrumb text-g-1-l-1">
         <li class="breadcrumb-item"><a href="/">Home</a></li>
-        <li class="breadcrumb-item"><a href="./basic.html">Shop</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Basic Equipmentp</li>
+        <li class="breadcrumb-item"><a href="./basic.html">EShop</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Basic Equipment</li>
       </ol>
     </nav>
     <div class="row justify-content-lg-between flex-lg-row flex-sm-column text-g-1-l-1">
       <div class="col-lg-6 col-sm-12">
-        <img src="./assets/img/shop/collection/product_thumbnail_112.jpg" class="card-img-top" alt="...">
+        <img src="./assets/img/shop/collection/plasticMaleTopHangers.jpg" class="card-img-top" alt="...">
       </div>
       <div class="col-lg-6 col-sm-12 text-g-1-l-1">
-        <h3 class="text-g-4-b-4 nb-red mt-sm-4 mt-4">Sale Price Tag</h3>
+        <h3 class="text-g-4-b-4 nb-red mt-sm-4 mt-1">Plastic Male Top Hangers (100pcs per carton)</h3>
         <p class="text-g-1-b-1">Description:</p>
-        <div>Shoe Tag Size: 4.3cmX6cm</div>
-        <div>Apparel Tag Size: 6cmX8cm</div>
-        <div>Material: Recycle Brown Paper</div>
-        <p class="mt-4 text-g-1-b-1">Per Packaging:</p>
-        <div>Shoe Tag X1000pcs</div>
-        <div>Apparel tag X1000pcs</div>
+        <div>2016 Plastic Male Top Hangers (grey)</div>
+        <div>size: 17 inch</div>
+        <div>Material: plastic</div>
+        <div>Finish: transparent half grey</div>
         <p class="mt-4 text-g-1-b-1">Price</p>
-        <div class="nb-red">USD 76.00</div>
+        <div class="nb-red">USD 55.00</div>
         <p class="mt-4 text-g-1-b-1">Remarks:</p>
+        <div class="mt-4">Use in contemporary performance area</div>
+        <div class="mb-4">(100pcs per carton)</div>
         <div>
           <label>Quantity: </label>
           <input type="number" min="1" step="1" data-bind="value: newItemQuantity, valueUpdate: 'keyup'" />
@@ -124,10 +124,6 @@
         <div class="mt-4">
           <button class="btn btn-nb-primary btn-block text-g-1-l-1 mb-4 add-to-cart" name="btn_addCart"
             value="addCart">Add to Cart</button>
-        </div>
-        <div class="mt-4">
-          <button class="btn btn-nb-primary btn-block text-g-1-l-1 mb-4" name="btn_addCart"
-            value="addCart" data-bind="click: addNewItem, enable: addNewItemEnabled">Add to Cart</button>
         </div>
       </div>
     </div>
