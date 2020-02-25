@@ -9714,6 +9714,11 @@ ul[data-menu-style="vertical"] li a:hover {
   transition: 300ms;
 }
 
+.btn-nb-info a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
 .btn-add-cart {
   color: #fefefe;
   background-color: #a58520;
@@ -9990,6 +9995,11 @@ ul[data-menu-style="vertical"] li a:hover {
   border-color: #997a16;
   -webkit-transition: 300ms;
   transition: 300ms;
+}
+
+.btn-nb-info a {
+  color: #fefefe;
+  text-decoration: none;
 }
 
 .btn-add-cart {

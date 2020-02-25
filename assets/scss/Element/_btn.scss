@@ -103,6 +103,10 @@
     border-color: $nb-loyalty-600;
     transition: 300ms;
   }
+  a{
+    color: $white;
+    text-decoration: none;
+  }
 }
 .btn-add-cart{
   color: $white;

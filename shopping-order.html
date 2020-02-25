@@ -4,14 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>New Balance Document Management System</title>
   <link rel="shortcut icon" type="image/x-icon" href="./assets/img/nb-favicon.ico">
-  <!--CSS Style-->
-	<link rel="stylesheet" href="./dist/style/all.min.css">
-	<!--FontAwesome-->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-		type="text/css" />
+  <link rel="stylesheet" href="./dist/style/all.min.css">
 </head>
 
 <body>
@@ -89,24 +85,45 @@
 		</div>
     <!-- End of Responsive Menu -->
   </header>
-	<main class="container" style="margin-top: 100px">
-    <div class="text-center text-g-4-b-4" style="height: 600px;">
-      <!-- Means the Eshop now -->
-      <p>Comming soon...</p>
-      </div>
-  </main>
-  <!-- footer start -->
-  <div class="container">
-    <div class="text-center footer-box text-g-1-l-1">
-      <p> Copyright © 2020 New Balance. All rights reserved.</p>
+  <main class="container login-all mb-4">
+    <div class="d-flex justify-content-end mb-2" style="position: fixed; top:70px;right: 20px; z-index: 999999;">
+      <button type="button" class="btn btn-nb-info mr-2" data-toggle="modal" data-target="#cart">Cart (<span
+          class="total-count"></span>)</button><button class="clear-cart btn btn-nb-secondary">Clear Cart</button>
     </div>
+    <nav aria-label="breadcrumb" class="pt-4">
+      <ol class="breadcrumb nb-breadcrumb text-g-1-l-1">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="./basic.html">EShop</a></li>
+        <li class="breadcrumb-item"><a href="">Fixture</a></li>
+        <li class="breadcrumb-item"><a href="">Metro</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Morgan Li</li>
+      </ol>
+    </nav>
+    <div class="justify-content-between text-g-1-l-1">
+      <h3 class="mt-4 text-g-3-b-3 nb-red">My Cart</h3>
+    </div>
+    <div class="text-g-1-l-1">
+      <div>
+        <table class="show-cart table">
+          <!-- <table class="show-cart table table-responsive"> -->
+  
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer start -->
+  <div class="text-center footer-box text-g-1-l-1">
+    <p> Copyright © 2020 New Balance. All rights reserved.</p>
   </div>
   <!-- footer end -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="./dist/js/popper.min.js"></script>
   <script type="text/javascript" src="./dist/js/bootstrap.min.js"></script>
-	<script src="./dist/js/ace-responsive-menu-min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="./dist/js/header.js"></script>
+  <script type="text/javascript" src="./dist/js/ace-responsive-menu-min.js" ></script>
+  <script type="text/javascript" src="./dist/js/header.js"></script>
+  <script type="text/javascript" src="./dist/js/nb-cart.js"></script>
 </body>
 
 </html>
