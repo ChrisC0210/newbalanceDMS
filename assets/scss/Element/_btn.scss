@@ -110,12 +110,12 @@
 }
 .btn-add-cart{
   color: $white;
-  background-color: $nb-loyalty;
-  border-color: $nb-loyalty;
+  background-color: $nb-red;
+  border-color: $nb-red;
   &:hover, &:active{
     color: $white;
-    background-color: $nb-loyalty-600;
-    border-color: $nb-loyalty-600;
+    background-color: $nb-red-600;
+    border-color: $nb-red-600;
     transition: 300ms;
   }
 }

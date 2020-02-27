@@ -9546,6 +9546,11 @@ ul[data-menu-style="vertical"] li a:hover {
   text-overflow: ellipsis;
 }
 
+.extra-img {
+  max-width: 200px;
+  max-height: 100px;
+}
+
 .nb-banner-img {
   height: 300px;
   margin: auto;
@@ -9721,14 +9726,14 @@ ul[data-menu-style="vertical"] li a:hover {
 
 .btn-add-cart {
   color: #fefefe;
-  background-color: #a58520;
-  border-color: #a58520;
+  background-color: #e21836;
+  border-color: #e21836;
 }
 
 .btn-add-cart:hover, .btn-add-cart:active {
   color: #fefefe;
-  background-color: #997a16;
-  border-color: #997a16;
+  background-color: #D1102D;
+  border-color: #D1102D;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -10004,14 +10009,14 @@ ul[data-menu-style="vertical"] li a:hover {
 
 .btn-add-cart {
   color: #fefefe;
-  background-color: #a58520;
-  border-color: #a58520;
+  background-color: #e21836;
+  border-color: #e21836;
 }
 
 .btn-add-cart:hover, .btn-add-cart:active {
   color: #fefefe;
-  background-color: #997a16;
-  border-color: #997a16;
+  background-color: #D1102D;
+  border-color: #D1102D;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
