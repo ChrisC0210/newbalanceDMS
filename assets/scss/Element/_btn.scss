@@ -88,10 +88,19 @@
   color: $white;
   background-color: $gray-500;
   border-color: $gray-500;
-  &:hover, &:active{
+  &:hover{
     background-color: $gray-600;
     border-color: $gray-600;
     transition: 300ms;
+    color: $white;
+    text-decoration: none;
+  }
+  &:active{
+    background-color: $gray-600;
+    border-color: $gray-600;
+    transition: 300ms;
+    color: $white;
+    text-decoration: none;
   }
 }
 .btn-nb-info{
