@@ -9575,6 +9575,17 @@ ul[data-menu-style="vertical"] li a:hover {
   background-color: #f8f9fa;
 }
 
+.img-child {
+  height: 150px;
+}
+
+.img-child img {
+  max-width: 180px;
+  min-width: 180px;
+  max-height: 120px;
+  min-height: 120px;
+}
+
 .nb-banner-img {
   height: 300px;
   margin: auto;
