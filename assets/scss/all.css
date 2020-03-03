@@ -9459,7 +9459,8 @@ ul[data-menu-style="vertical"] li a:hover {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
@@ -9551,8 +9552,27 @@ ul[data-menu-style="vertical"] li a:hover {
   min-width: 250px;
   max-height: 150px;
   min-height: 150px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+}
+
+.fixtures-box-img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fixtures-box-img img {
+  overflow: hidden;
+}
+
+.fixtures-box-img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.fixtures-group-color {
+  background-color: #f8f9fa;
 }
 
 .nb-banner-img {
