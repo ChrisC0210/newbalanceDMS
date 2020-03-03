@@ -173,6 +173,8 @@ function displayCart() {
       + "</tr>";
   }
   $('.show-cart').html(output);
+  //chris add
+  //$( ".show-cart" ).append( "<p class='text-center mt-4 text-g-4-b-4'>Your Cart is Empty 😢</p>" );
   $('.total-cart').html(shoppingCart.totalCart());
   $('.total-count').html(shoppingCart.totalCount());
 }
@@ -236,4 +238,9 @@ $('.btn-warning').click(function (event) {
   displayCart();
 });
 //chris end
+document.querySelectorAll('.add-to-cart').forEach(button => {
+  button.addEventListener('click', e => {
+      button.classList.toggle('added');
+  });
+});
 //test only    
