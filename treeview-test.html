@@ -95,12 +95,22 @@
 		</div>
     <!-- End of Responsive Menu -->
   </header>
-  <main class="container login-all mb-4 pt-4 text-g-1-l-1">
+  <main class="container login-all mb-4">
 		<div class="justify-content-between text-g-1-l-1">
       <h3 class="pt-4 text-g-3-b-3 nb-red">Store Concept</h3>
     </div>
-		<p class="description text-g-2-l-2">
-			File
+    <p>
+      <!-- <a id="button1">Toggle Node 3.1</a> -->
+    </p>
+		<div id="tree" class="text-g-2-l-2"></div>
+    <div id="statusLine" class="tree-content text-g-1-l-1 mb-4">
+			<div class="nb-red text-g-2-l-2">
+			Click any node!
+			</div>
+		</div>
+		<!-- ,, -->
+		<p class="description">
+			This tree has <b>checkoxes and selectMode 1 (single-selection)</b> enabled.<br>
 		</p>
 		<div id="tree1">
 		</div>
@@ -122,8 +132,63 @@
   <script type="text/javascript" src="./dist/js/header.js"></script>
 	<script type="text/javascript" src="./dist/js/jquery.fancytree-all-deps.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.fancytree/dist/jquery.fancytree-all-deps.min.js"></script>
+  <script>
+$("#tree").fancytree({
+	extensions: ["glyph"],
+	glyph: {
+        preset: "awesome4",
+        map: {}
+      },
+  checkbox: true,
+  source: [
+    // Typically we would load using ajax instead...
+    { title: "Node 1" },
+    { title: "Node 2" },
+    {
+      title: "Folder 3",
+      folder: true,
+      expanded: true,
+      children: [
+        { title: "Node 3.1", key: "id3.1" },
+        { title: "Node 3.2", selected: true }
+      ]
+    },
+    {
+      title: "Folder 4",
+      folder: true,
+      children: [{ title: "Node 4.1" }, { title: "Node 4.2" }]
+    }
+  ],
+  // activate: function(event, data) {
+  //   $("#statusLine").text(event.type + ": " + data.node);
+  // },
+  // select: function(event, data) {
+  //   $("#statusLine").text(
+  //     event.type + ": " + data.node.isSelected() + " " + data.node
+  //   );
+	// }
+	activate: function(event, data) {
+    $("#statusLine").text(event + data.node);
+  },
+  select: function(event, data) {
+    $("#statusLine").text(
+      event + ": " + data.node.isSelected() + " " + data.node
+    );
+  }
+});
+
+// Select a node on click
+$("#button1").click(function() {
+  var tree = $("#tree").fancytree("getTree"),
+    node = tree.getNodeByKey("id3.1");
+
+  node.toggleSelected();
+});
+$(".fancytree-container").addClass("fancytree-connectors");
+	</script>
 	<script type="text/javascript">
 		$(function(){
+	
 			// --- Initialize sample trees
 			$("#tree1").fancytree({
 				extensions: ["glyph"],
