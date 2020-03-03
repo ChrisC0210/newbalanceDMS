@@ -10443,6 +10443,12 @@ table.fancytree-ext-columnview span.fancytree-node.fancytree-active {
   padding-top: 40px;
 }
 
+.fancytree-custom-icon svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.125em;
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
