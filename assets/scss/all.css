@@ -9548,16 +9548,22 @@ ul[data-menu-style="vertical"] li a:hover {
 }
 
 .extra-img {
-  max-width: 250px;
-  min-width: 250px;
-  max-height: 150px;
-  min-height: 150px;
+  max-height: 100px;
+}
+
+.extra-img img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .fixtures-box-img {
-  height: 200px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .fixtures-box-img img {
