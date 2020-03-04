@@ -133,3 +133,41 @@
   border-top: 1px solid 
   #dee2e6;
 }
+//cart
+//morgan-li-cart.html
+//morgan-li-cart2.html
+.cart-img-box{
+  position: relative;
+  max-width: 500px;
+  height: 500px;
+  object-fit: scale-down;
+  text-align:center;
+  //background-color: rgb(153, 40, 40);
+  @media screen and (max-width: 800px) {
+    max-width: 100%;
+  }
+  img{
+    -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+//child
+.cart-child-container{
+  background-color: $gray-100;
+}
+.cart-child-box{
+  height: 100%;
+  //margin-right: 10px;
+  object-fit: scale-down;
+  background-color: $gray-100;
+}

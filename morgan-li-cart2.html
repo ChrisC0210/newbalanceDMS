@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Balance Document Management System</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/nb-favicon.ico">
+  <link rel="stylesheet" href="./dist/style/all.min.css">
+</head>
+
+<body>
+  <header class="header-all text-g-1-l-1">
+    <!-- Ace Responsive Menu -->
+    <nav class="nb-nav" style="z-index: 99999;">
+      <span class="nb-logo-box"><a class="navbar-brand" href="/"><img class="nb-logo" src="./assets/nb-logo.svg"
+            alt="logo"></a></span>
+      <!-- Menu Toggle btn-->
+      <div class="menu-toggle">
+        <button type="button" id="menu-btn">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Responsive Menu Structure-->
+      <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+      <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+        <li>
+          <a href="/">
+            <span class="title">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <span class="title">Retail Concept Manual</span>
+          </a>
+          <!-- Level Two-->
+          <ul>
+            <li>
+              <a href="#">Metro</a>
+            </li>
+            <li>
+              <a href="./assets/Global FO_LL Deck.pdf" download>Factory Outlet</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="" href="javascript:;">
+            <span class="title">Eshop</span>
+          </a>
+          <ul>
+            <li>
+              <a href="./basic.html">Basic
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">Fixture
+              </a>
+              <ul>
+                <li><a href="#">Metro </a>
+                  <ul>
+                    <li><a href="./morgan-li.html">Morgan Li</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Factory Outlet</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./props.html">Props
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="last ">
+          <a href="./contact.html">
+            <span class="title">Contact Us</span>
+          </a>
+        </li>
+        <li class=" ">
+          <a class="right-menu" href="./login.html">
+            <span class="title">Log in</span></a>
+        </li>
+      </ul>
+      </div>
+      <!-- End of Responsive Menu -->
+  </header>
+  <main class="container login-all mb-4">
+    <!-- add to cart -->
+    <div class="d-flex justify-content-end mb-2" style="position: fixed; top:70px;right: 20px; z-index: 999999;">
+      <button type="button" class="btn btn-nb-info mr-2" data-toggle="modal" data-target="#cart">Cart (<span
+          class="total-count"></span>)</button><button class="clear-cart btn btn-nb-secondary">Clear Cart</button>
+    </div>
+    <!-- add to cart -->
+    <nav aria-label="breadcrumb" class="pt-4">
+      <ol class="breadcrumb nb-breadcrumb text-g-1-l-1">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="./basic.html">EShop</a></li>
+        <li class="breadcrumb-item"><a href="">Fixture</a></li>
+        <li class="breadcrumb-item"><a href="./morgan-li.html">Metro</a></li>
+        <li class="breadcrumb-item active"><a href="">morgan li</a></li>
+        <!-- <li class="breadcrumb-item active" aria-current="page">Morgan Li</li> -->
+      </ol>
+    </nav>
+    <div class="row justify-content-lg-between flex-lg-row flex-sm-column text-g-1-l-1">
+      <div class="col-lg-6 col-sm-12 cart-img-box">
+        <img src="./assets/img/shop/morgan-li/Lifestyle_footwear_wall_kit.png" class="card-img-top" alt="...">
+      </div>
+      <div class="col-lg-6 col-sm-12 text-g-1-l-1">
+        <h3 class="text-g-4-b-4 nb-red mt-sm-4 mt-1">Lifestyle Footwear Wall</h3>
+        <p class="text-g-1-b-1">Description:</p>
+        <div>FIXTURE: 15-0015+15-0017</div>
+        <p class="mt-4 text-g-1-b-1">Price</p>
+        <div class="nb-red"> $581.28 USD</div>
+        <p class="mt-4 text-g-1-b-1">Remarks:</p>
+        <div class="mt-4">e.g Graphic isn't included </div>
+        <div class="mb-4"> </div>
+        <!-- <div>
+          <label>Quantity: </label>
+          <input type="number" min="1" step="1" data-bind="value: newItemQuantity, valueUpdate: 'keyup'" />
+          </span>
+        </div>
+        <div style="font-size: 14px;">* include local tax for USD</div> -->
+        <div class="mt-4">
+          <button class="btn btn-nb-primary btn-block text-g-1-l-1 mb-4 add-to-cart btn-add-cart" data-toggle="modal" data-target="#cart" data-name="Lifestyle&nbsp;Footwear&nbsp;Wall(15-0015+15-0017)" data-price="581.28">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="cart-child-container pt-4 pb-4">
+    <div class="container">
+      <!-- has child -->
+      <h3 class="mt-4 text-g-3-b-3 gray-800">Add Other Fixturs ...</h3>
+      <div class="d-flex row row-cols-1 row-cols-md-2 shop-card-box">
+        <!-- child  -->
+        <div class="col-lg-3 col-md-4 col-sm-12 cart-child-box  mb-4">
+          <a href="#" data-toggle="modal" data-target="#cart" data-name="Lifestyle&nbsp;FTW&nbsp;Wall&nbsp;(fabric)" data-price="282.06" class="add-to-cart" class="col-lg-3 col-md-3 col-sm-12 mb-4">
+            <div class="card h-100 nb-box-shadow-hover">
+              <div class="img-box">
+                <img src="./assets/img/shop/morgan-li/Lifestyle_footwear_wall_kit.png" class="card-img-top" alt="...">
+              </div>
+              <div class="m-2">
+                <p class="card-title text-g-1-b-1"> Lifestyle FTW Wall (fabric)</p>
+                <div class="text-g-1-l-1 mb-1"> Fixture: 15-0015</div>
+                <div class="text-g-1-l-1 nb-red"> Price: $282.06 USD</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- child  -->
+        <!-- child  -->
+        <div class="col-lg-3 col-md-4 col-sm-12 cart-child-box">
+          <a href="#" data-toggle="modal" data-target="#cart" data-name="Number&nbsp;header&nbsp;Style&nbsp;1" data-price="299.22" class="add-to-cart" class="col-lg-3 col-md-3 col-sm-12 mb-4">
+            <div class="card h-100 nb-box-shadow-hover">
+              <div class="img-box">
+                <img src="./assets/img/shop/morgan-li/Lifestyle_footwear_wall_kit.png" class="card-img-top" alt="...">
+              </div>
+              <div class="m-2">
+                <p class="card-title text-g-1-b-1"> Number header Style 1</p>
+                <div class="text-g-1-l-1 mb-1"> Fixture: 15-0017</div>
+                <div class="text-g-1-l-1 nb-red"> Price: $299.22 USD</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- child  -->
+      </div>
+      <!-- has child -->
+    </div>
+  </section>
+  <!--product Modal -->
+  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body table-responsive">
+          <table class="show-cart table">
+
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-nb-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-nb-info">
+            <a href="./shopping-order.html">Checkout</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--product Modal -->
+  <!-- footer start -->
+  <div class="text-center footer-box text-g-1-l-1">
+    <p> Copyright © 2020 New Balance. All rights reserved.</p>
+  </div>
+  <!-- footer end -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./dist/js/popper.min.js"></script>
+  <script type="text/javascript" src="./dist/js/bootstrap.min.js"></script>
+  <script src="./dist/js/ace-responsive-menu-min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="./dist/js/header.js"></script>
+  <script type="text/javascript" src="./dist/js/nb-cart.js"></script>
+</body>
+
+</html>

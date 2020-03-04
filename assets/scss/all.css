@@ -8935,6 +8935,10 @@ ul[data-menu-style="vertical"] li a:hover {
   color: #D1102D;
 }
 
+.nb-loyalty {
+  color: #a58520;
+}
+
 .ap-pink-200 {
   color: #F4E2E3;
 }
@@ -9596,6 +9600,47 @@ ul[data-menu-style="vertical"] li a:hover {
   padding: 0.5rem !important;
   vertical-align: top;
   border-top: 1px solid  #dee2e6;
+}
+
+.cart-img-box {
+  position: relative;
+  max-width: 500px;
+  height: 500px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .cart-img-box {
+    max-width: 100%;
+  }
+}
+
+.cart-img-box img {
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.cart-child-container {
+  background-color: #f8f9fa;
+}
+
+.cart-child-box {
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  background-color: #f8f9fa;
 }
 
 .nb-banner-img {
