@@ -9841,6 +9841,52 @@ ul[data-menu-style="vertical"] li a:hover {
   transition: 300ms;
 }
 
+.shop-sub-menu-box {
+  margin-bottom: 20px;
+  max-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.shop-sub-menu-box .nav-link.active {
+  color: #fff;
+  background-color: #D1102D !important;
+}
+
+.shop-sub-menu-box::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.btn-shop-sub-menu {
+  color: #fefefe;
+  background-color: #848383;
+  border-color: #848383;
+}
+
+.btn-shop-sub-menu:hover, .btn-shop-sub-menu:active {
+  color: #fefefe;
+  background-color: #848383;
+  border-color: #848383;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
 /*!
  * Fancytree "awesome" skin.
  *
@@ -10807,6 +10853,52 @@ table.fancytree-ext-columnview span.fancytree-node.fancytree-active {
   color: #fefefe;
   background-color: #D1102D;
   border-color: #D1102D;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.shop-sub-menu-box {
+  margin-bottom: 20px;
+  max-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.shop-sub-menu-box .nav-link.active {
+  color: #fff;
+  background-color: #D1102D !important;
+}
+
+.shop-sub-menu-box::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.btn-shop-sub-menu {
+  color: #fefefe;
+  background-color: #848383;
+  border-color: #848383;
+}
+
+.btn-shop-sub-menu:hover, .btn-shop-sub-menu:active {
+  color: #fefefe;
+  background-color: #848383;
+  border-color: #848383;
   -webkit-transition: 300ms;
   transition: 300ms;
 }

@@ -128,3 +128,38 @@
     transition: 300ms;
   }
 }
+//https://medium.com/@littleDog/%E7%94%A8-webkit-overflow-scrolling-touch-%E8%AE%93%E4%BD%A0%E7%9A%84mobile-web-application%E6%94%AF%E6%8F%B4momentum-based-scrolling-1efacea28611
+.shop-sub-menu-box{
+  margin-bottom: 20px;
+  max-height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap !important;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  //touch-action: pan-y;
+  user-select: none;
+  white-space: nowrap;
+  //overflow: hidden;
+  //hide scrollbar
+  -ms-overflow-style: none;//IE 10+ 
+  overflow: -moz-scrollbars-none; //Firefox
+  .nav-link.active {
+    color: #fff;
+    background-color: $nb-red-600 !important;
+  }
+}
+//overflow: hidden;
+//chrome Safari
+.shop-sub-menu-box::-webkit-scrollbar { width: 0 !important }
+.btn-shop-sub-menu{
+  color: $white;
+  background-color: $gray-600;
+  border-color: $gray-600;
+  &:hover, &:active{
+    color: $white;
+    background-color: $gray-600;
+    border-color: $gray-600;
+    transition: 300ms;
+  }
+}
