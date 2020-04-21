@@ -131,10 +131,12 @@
 //https://medium.com/@littleDog/%E7%94%A8-webkit-overflow-scrolling-touch-%E8%AE%93%E4%BD%A0%E7%9A%84mobile-web-application%E6%94%AF%E6%8F%B4momentum-based-scrolling-1efacea28611
 .shop-sub-menu-box{
   margin-bottom: 20px;
-  max-height: 50px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap !important;
+  margin-top: 20px;
+  height: 100%;
+  //max-height: 50px;
+  //display: flex;
+  //flex-direction: row;
+  //flex-wrap: nowrap !important;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   //touch-action: pan-y;
@@ -162,4 +164,5 @@
     border-color: $gray-600;
     transition: 300ms;
   }
+  margin-bottom: 10px;
 }

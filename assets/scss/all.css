@@ -11472,16 +11472,8 @@ ul[data-menu-style="vertical"] li a:hover {
 
 .shop-sub-menu-box {
   margin-bottom: 20px;
-  max-height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap !important;
-      flex-wrap: nowrap !important;
+  margin-top: 20px;
+  height: 100%;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -webkit-user-select: none;
@@ -11506,6 +11498,7 @@ ul[data-menu-style="vertical"] li a:hover {
   color: #fefefe;
   background-color: #848383;
   border-color: #848383;
+  margin-bottom: 10px;
 }
 
 .btn-shop-sub-menu:hover, .btn-shop-sub-menu:active {
@@ -12488,16 +12481,8 @@ table.fancytree-ext-columnview span.fancytree-node.fancytree-active {
 
 .shop-sub-menu-box {
   margin-bottom: 20px;
-  max-height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap !important;
-      flex-wrap: nowrap !important;
+  margin-top: 20px;
+  height: 100%;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -webkit-user-select: none;
@@ -12522,6 +12507,7 @@ table.fancytree-ext-columnview span.fancytree-node.fancytree-active {
   color: #fefefe;
   background-color: #848383;
   border-color: #848383;
+  margin-bottom: 10px;
 }
 
 .btn-shop-sub-menu:hover, .btn-shop-sub-menu:active {
