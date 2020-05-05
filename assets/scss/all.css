@@ -12243,6 +12243,31 @@ table.fancytree-ext-columnview span.fancytree-node.fancytree-active {
   text-decoration: none;
 }
 
+.cart-header {
+  position: fixed;
+  top: 150px;
+  right: 20px;
+  z-index: 999999;
+}
+
+@media screen and (max-width: 1440px) {
+  .cart-header {
+    top: 70px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .cart-header {
+    top: 150px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .cart-header {
+    top: 70px;
+  }
+}
+
 .login-all {
   position: relative;
   z-index: 1;

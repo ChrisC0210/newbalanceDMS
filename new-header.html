@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Balance Document Management System</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/nb-favicon.ico">
+  <link rel="stylesheet" href="./dist/style/all.min.css">
+</head>
+
+<body>
+  <header class="header-all text-g-1-l-1">
+    <!-- Ace Responsive Menu -->
+    <nav class="nb-nav" style="z-index: 99999;">
+      <span class="nb-logo-box"><a class="navbar-brand" href="/"><img class="nb-logo" src="./assets/nb-logo.svg"
+            alt="logo"></a></span>
+      <!-- Menu Toggle btn-->
+      <div class="menu-toggle">
+        <button type="button" id="menu-btn">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Responsive Menu Structure-->
+      <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+      <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+        <!--
+        <li>
+            <a href="/">
+                <span class="title">Home</span>
+            </a>
+        </li>
+        -->
+        <li class="">
+          <a href="javascript:;">
+            <span class="title">Retail Concept Manual</span>
+          </a>
+          <!-- Level Two-->
+          <ul class="sub-menu" style="display: none;">
+            <li class=""><a href="/metro">Metro</a></li>
+            <li class=""><a href="/factory-outlet">Factory Outlet</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a class="" href="javascript:;">
+            <span class="title">Flagship</span>
+          </a>
+          <ul class="sub-menu">
+            <li class="">
+              <a href="javascript:;">Fixture</a>
+              <ul class="sub-menu">
+                <li><a href="/fixture/36">Metro (ML)</a></li>
+                <li><a href="/fixture/39">Metro (WS)</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a href="/category/19">Mannequin (Polyurethane Grey)</a>
+            </li>
+            <li>
+            </li>
+            <li class="">
+              <a href="/category/25">Props</a>
+            </li>
+          </ul>
+        </li>
+        <li class="">
+          <a class="" href="javascript:;">
+            <span class="title">Metro (Inline / SIS)</span>
+          </a>
+          <ul class="sub-menu">
+            <li>
+              <a href="javascript:;">Fixture</a>
+              <ul class="sub-menu">
+                <li><a href="/fixture/36">Metro (ML)</a></li>
+                <li><a href="/fixture/39">Metro (WS)</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/category/20">Mannequin (Fiberglass)</a>
+            </li>
+            <li>
+              <a href="/category/5">Props</a>
+            </li>
+          </ul>
+        </li>
+        <li class="">
+          <a class="" href="javascript:;">
+            <span class="title">Factory Outlet</span>
+          </a>
+          <ul class="sub-menu">
+            <li>
+              <a href="javascript:;">Fixture</a>
+              <ul class="sub-menu">
+                <li><a href="/fixture/40">Factory Outlet (SP)</a></li>
+                <li><a href="/fixture/41">Factory Outlet (ED)</a></li>
+                <li><a href="/fixture/58">Factory Outlet (SP)(JP)</a></li>
+                <li><a href="/fixture/42">Factory Outlet</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/category/20">Mannequin (Fiberglass)</a>
+            </li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="/category/1">
+            <span class="title">Basic Equipment</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="/purchase_order/list/1">My Transactions</a>
+        </li>
+        <li class="last">
+          <a href="/contact-us">
+            <span class="title">Contact Us</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="javascript:;">
+            <span class="title">Eshop Admin</span>
+          </a>
+          <ul class="sub-menu">
+            <li>
+              <a href="/admin/purchase_order/list/1">Transactions</a>
+            </li>
+            <li>
+              <a href="/admin/product/list/1">Products</a>
+            </li>
+            <li>
+              <a href="/admin/user/list/1">Users</a>
+            </li>
+            <li>
+              <a href="/admin/category/list">Categorys</a>
+            </li>
+            <li>
+              <a href="/admin/subcategory/list">Subcategorys</a>
+            </li>
+            <li>
+              <a href="/admin/fixture/list">Fixtures</a>
+            </li>
+            <li>
+              <a href="/admin/region/list/1">Regions</a>
+            </li>
+            <li>
+              <a href="/admin/supplier/list/1">Suppliers</a>
+            </li>
+          </ul>
+        </li>
+        <li class="last ">
+          <a href="javascript:;">
+            <span class="title nb-red">Setting</span>
+          </a>
+          <ul class="sub-menu">
+            <li>
+              <a href="/my-account">My Account</a>
+            </li>
+            <li>
+              <a href="/help">Help</a>
+            </li>
+          </ul>
+        </li>
+        <li class="">
+          <a class="right-menu" href="/logout">
+            <span class="title">Logout</span>
+          </a>
+        </li>
+      </ul>
+      </div>
+      <!-- End of Responsive Menu -->
+  </header>
+  <main class="container login-all mb-4">
+      <!-- add to cart -->
+      <div class="d-flex justify-content-end mb-2 cart-header">
+        <a role="button" class="btn btn-nb-info mr-2" href="/shopping-cart" id="btn_cart_view">
+                  Cart (<span
+                  class="total-count">0</span>)
+              </a>
+        <a role="button" class="clear-cart btn btn-nb-secondary" id="btn_clear_cart">Clear Cart</a>
+      </div>
+    <!-- add to cart -->
+    <div class="nb-banner-img text-g-6-b-6">
+      <img src="./assets/img/shop/corporate-it.jpg" alt="">
+      <p>ESHOP</p>
+    </div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb nb-breadcrumb text-g-1-l-1">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">EShop</li>
+      </ol>
+    </nav>
+    <div class="justify-content-between text-g-1-l-1">
+      <h3 class="mt-4 text-g-3-b-3 nb-red">Basic Equipment</h3>
+      <!-- sub menu start -->
+      <div class=" ">
+        <div class=" ">
+          <div class="nav nav-pills shop-sub-menu-box" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link ml-2 active btn-shop-sub-menu" id="v-pills-basic-1-tab" data-toggle="pill"
+              href="#v-pills-basic-1" role="tab" aria-controls="v-pills-basic-1" aria-selected="true">All</a>
+            <a class="nav-link ml-2 btn-shop-sub-menu" id="v-pills-basic-2-tab" data-toggle="pill"
+              href="#v-pills-basic-2" role="tab" aria-controls="v-pills-basic-2" aria-selected="false">Hangers</a>
+            <a class="nav-link ml-2 btn-shop-sub-menu" id="v-pills-basic-3-tab" data-toggle="pill"
+              href="#v-pills-basic-3" role="tab" aria-controls="v-pills-basic-3" aria-selected="false">Shopping Bag</a>
+            <a class="nav-link ml-2 btn-shop-sub-menu" id="v-pills-basic-4-tab" data-toggle="pill"
+              href="#v-pills-basic-4" role="tab" aria-controls="v-pills-basic-4" aria-selected="false">Bag filler</a>
+            <a class="nav-link ml-2 btn-shop-sub-menu" id="v-pills-basic-5-tab" data-toggle="pill"
+              href="#v-pills-basic-5" role="tab" aria-controls="v-pills-basic-5" aria-selected="false">Shoe Insert</a>
+            <a class="nav-link ml-2 btn-shop-sub-menu" id="v-pills-basic-6-tab" data-toggle="pill"
+              href="#v-pills-basic-6" role="tab" aria-controls="v-pills-basic-6" aria-selected="false">Size Collar</a>
+            <!-- add more tab -->
+            <a class="nav-link ml-2 btn-shop-sub-menu" id="v-pills-basic-6-tab" data-toggle="pill"
+              href="#v-pills-basic-6" role="tab" aria-controls="v-pills-basic-6" aria-selected="false">Size Collar</a>
+            <a class="nav-link ml-2 btn-shop-sub-menu" id="v-pills-basic-6-tab" data-toggle="pill"
+              href="#v-pills-basic-6" role="tab" aria-controls="v-pills-basic-6" aria-selected="false">Size Collar</a>
+            <a class="nav-link ml-2 btn-shop-sub-menu" id="v-pills-basic-6-tab" data-toggle="pill"
+              href="#v-pills-basic-6" role="tab" aria-controls="v-pills-basic-6" aria-selected="false">Size Collar</a>
+            <a class="nav-link ml-2 btn-shop-sub-menu" id="v-pills-basic-6-tab" data-toggle="pill"
+              href="#v-pills-basic-6" role="tab" aria-controls="v-pills-basic-6" aria-selected="false">Size Collar</a>
+            <a class="nav-link ml-2 btn-shop-sub-menu" id="v-pills-basic-6-tab" data-toggle="pill"
+              href="#v-pills-basic-6" role="tab" aria-controls="v-pills-basic-6" aria-selected="false">Size Collar</a>
+            <!-- add more tab -->
+          </div>
+        </div>
+        <div class=" ">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-basic-1" role="tabpanel"
+              aria-labelledby="v-pills-basic-1-tab">
+              <!-- card start -->
+              <div class="row row-cols-1 row-cols-md-2 shop-card-box">
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="./shopping-cart.html">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/plasticMaleTopHangers.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Plastic Male Top Hangers (100pcs per carton)</p>
+                      <p class="card-text nb-red">USD 55.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/NBShoppingBagLarge.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">NB Shopping Bag Large</p>
+                      <p class="card-text nb-red">USD 38.60
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/bagFillerWithPump.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">BAG FILLER WITH PUMP</p>
+                      <p class="card-text nb-red">USD 48.00</p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/plasticBottomHangers .jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Plastic Bottom Hangers (100pcs per carton)</p>
+                      <p class="card-text nb-red">USD 55.00</p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/KidShoeInsert.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">
+                        Kids' Shoe Insert</p>
+                      <p class="card-text nb-red">USD 70.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/SizeCollarL.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Size Collar (L)</p>
+                      <p class="card-text nb-red">USD 12.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/Brahanger.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Bra hanger (100pcs per carton)</p>
+                      <p class="card-text nb-red">USD 55.00</p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/KidShoeInsert.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Men's Shoe Insert</p>
+                      <p class="card-text nb-red">USD 100.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="tab-pane fade" id="v-pills-basic-2" role="tabpanel" aria-labelledby="v-pills-basic-2-tab">
+              <!-- card start -->
+              <div class="row row-cols-1 row-cols-md-2 shop-card-box">
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="./shopping-cart.html">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/plasticMaleTopHangers.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Plastic Male Top Hangers (100pcs per carton)</p>
+                      <p class="card-text nb-red">USD 55.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="./shopping-cart.html">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/plasticMaleTopHangers.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Plastic Female Top Hangers (100pcs per carton)</p>
+                      <p class="card-text nb-red">USD 55.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="./shopping-cart.html">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/plasticBottomHangers .jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Plastic Bottom Hangers (100pcs per carton)</p>
+                      <p class="card-text nb-red">USD 55.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="./shopping-cart.html">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/Brahanger.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Bra hanger (100pcs per carton)</p>
+                      <p class="card-text nb-red">USD 55.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="tab-pane fade" id="v-pills-basic-3" role="tabpanel" aria-labelledby="v-pills-basic-3-tab">
+              <!-- card start -->
+              <div class="row row-cols-1 row-cols-md-2 shop-card-box">
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/NBShoppingBagLarge.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">NB Shopping Bag Large</p>
+                      <p class="card-text nb-red">USD 38.60
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/NBShoppingBagLarge.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">NB Shopping Bag Medium</p>
+                      <p class="card-text nb-red">USD 28.60
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/NBShoppingBagLarge.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">NB Shopping Bag Small</p>
+                      <p class="card-text nb-red">USD 48.60
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="tab-pane fade" id="v-pills-basic-4" role="tabpanel" aria-labelledby="v-pills-basic-4-tab">
+              <!-- card start -->
+              <div class="row row-cols-1 row-cols-md-2 shop-card-box">
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/bagFillerWithPump.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">BAG FILLER WITH PUMP</p>
+                      <p class="card-text nb-red">USD 48.00</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="tab-pane fade" id="v-pills-basic-5" role="tabpanel" aria-labelledby="v-pills-basic-5-tab">
+              <!-- card start -->
+              <div class="row row-cols-1 row-cols-md-2 shop-card-box">
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/KidShoeInsert.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">
+                        Kids' Shoe Insert</p>
+                      <p class="card-text nb-red">USD 70.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/KidShoeInsert.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">
+                        Men's Shoe Insert</p>
+                      <p class="card-text nb-red">USD 100.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/KidShoeInsert.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">
+                        Women's Shoe Insert</p>
+                      <p class="card-text nb-red">USD 90.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="tab-pane fade" id="v-pills-basic-6" role="tabpanel" aria-labelledby="v-pills-basic-6-tab">
+              <!-- card start -->
+              <div class="row row-cols-1 row-cols-md-2 shop-card-box">
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/SizeCollarL.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Size Collar (XS)</p>
+                      <p class="card-text nb-red">USD 12.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/SizeCollarL.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Size Collar (S)</p>
+                      <p class="card-text nb-red">USD 12.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/SizeCollarL.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Size Collar (M)</p>
+                      <p class="card-text nb-red">USD 12.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/SizeCollarL.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Size Collar (L)</p>
+                      <p class="card-text nb-red">USD 12.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/SizeCollarL.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Size Collar (XL)</p>
+                      <p class="card-text nb-red">USD 12.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="col-lg-3 col-md-3 col-sm-12 mb-4" href="#">
+                  <div class="card h-100 nb-box-shadow-hover">
+                    <div class="img-box">
+                      <img src="./assets/img/shop/collection/SizeCollarL.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title text-g-1-b-1">Size Collar (XXL)</p>
+                      <p class="card-text nb-red">USD 12.00
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- card end -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sub menu end -->
+    </div>
+    <!-- more btn -->
+    <!-- <div class="d-flex justify-content-center">
+      <button class="btn btn-nb-gray-500 btn-block text-g-1-l-1 mb-4" name="btn_more" value="more">More</button>
+    </div> -->
+    <!-- more btn -->
+  </main>
+  <!-- footer start -->
+  <div class="text-center footer-box text-g-1-l-1">
+    <p> Copyright © 2020 New Balance. All rights reserved.</p>
+  </div>
+  <!-- footer end -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./dist/js/popper.min.js"></script>
+  <script type="text/javascript" src="./dist/js/bootstrap.min.js"></script>
+  <script src="./dist/js/ace-responsive-menu-min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="./dist/js/header.js"></script>
+</body>
+
+</html>

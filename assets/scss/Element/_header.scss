@@ -53,3 +53,19 @@ $nav-height: 70px;
     text-decoration: none;
   }
 }
+//cart style
+.cart-header{
+  position: fixed; 
+  top:150px;
+  right: 20px; 
+  z-index: 999999;
+  @media screen and (max-width: 1440px) {
+    top:70px;
+  }
+  @media screen and (max-width: 1025px) {
+    top:150px;
+  }
+  @media screen and (max-width: 799px) {
+    top:70px;
+  }
+}
