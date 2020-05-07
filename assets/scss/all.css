@@ -12245,7 +12245,7 @@ table.fancytree-ext-columnview span.fancytree-node.fancytree-active {
 
 .cart-header {
   position: fixed;
-  top: 150px;
+  top: 70px;
   right: 20px;
   z-index: 999999;
 }
@@ -12256,13 +12256,31 @@ table.fancytree-ext-columnview span.fancytree-node.fancytree-active {
   }
 }
 
+@media screen and (max-width: 1370px) {
+  .cart-header {
+    top: 150px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .cart-header {
+    top: 150px;
+  }
+}
+
 @media screen and (max-width: 1025px) {
   .cart-header {
     top: 150px;
   }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 800px) {
+  .cart-header {
+    top: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .cart-header {
     top: 70px;
   }

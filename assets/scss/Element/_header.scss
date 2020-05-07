@@ -56,16 +56,25 @@ $nav-height: 70px;
 //cart style
 .cart-header{
   position: fixed; 
-  top:150px;
+  top:70px;
   right: 20px; 
   z-index: 999999;
   @media screen and (max-width: 1440px) {
     top:70px;
   }
+  @media screen and (max-width: 1370px) {
+    top:150px;
+  }
+  @media screen and (max-width: 1080px) {
+    top:150px;
+  }
   @media screen and (max-width: 1025px) {
     top:150px;
   }
-  @media screen and (max-width: 799px) {
+  @media screen and (max-width: 800px) {
+    top:180px;
+  }
+  @media screen and (max-width: 768px) {
     top:70px;
   }
 }
